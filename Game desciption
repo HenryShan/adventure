@@ -1,0 +1,31 @@
+Welcome to use this program! This program is a small interactive game about Call of Cthulhu theme.
+The adventurer in this game is imprisoned in a world of dream and can only escape here by eating the 'soup' in the initial room, but just the soup seems not enough...
+Similar with the classic COC TRPG setting, in this game the adventurer has status like HP, ATK, DEF, sixth-sense, SAN and Dangerous line. SAN value expressing the stability of the character's sanity.
+If the SAN drop below the Dangerous line, the character's other status will reduce. If the SAN goes to 0 or below, the character will falls into forever crazy and cannot go back to reality.
+The result of operations like search(sixth-sense) and battle is depend on both the number dice gives and the character's status.
+For battle in this game, if the dice gives number >= 75, the character can generate a critical hit; similarly, if dice value <= 10, the damage will be half of the original value;
+For search(sixth-sense) we used to find the hidden items, if the dice value is smaller than character's sixth-sense value, player can find the hidden item.
+How to escape: add poison in the 'soup' and eat it. There is some rest soup in kitchen with no poison inside as a back up;
+In the setting of story, even you died in dream, you can still revive in the reality, as long as you make the Old Ones happy.
+
+
+
+
+
+
+
+
+There are totally 5 endings in this game:
+1.Fastest end: (make settings) -> used bed -> go to library -> pick the candle -> back to middle room -> use sixth-sense to find the glass bottle in the chandelier -
+        -> break the bulb -> pick up the bottle -> put poison in the bottle to the bowl -> eat the soup -> clear
+
+2.Best end: (repeat the operation above but do not eat the soup now) -> go to slave's room -> give the girl poisoned soup and let her eat it -> find plate in dining hall
+        -> use the plate to take the poison on the cover of the book "the dream of soup" out from the library(take the book out will let you be assaulted by slime which is
+        guarding the library) -> refill the bowl with backup soup -> put poison from the plate to the bowl -> eat it!
+        In this ending both adventurer and the girl will be saved.
+
+3.BAD END1: the time limit is reached and the Old One Chaugnar Faugn will wake up and kill the adventurer.
+4.BAD END2: the SAN of the adventurer goes to 0 and the character lose its sanity totally. Lastly be killed by the awake Old One.
+5.BAD END3: the adventurer died in the battle with Hunting Horror or Slime.
+
+Thanks for reading this and please enjoy the game :-)
