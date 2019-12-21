@@ -738,7 +738,7 @@
                (let [input (read-line)]
                 (cond
                 (= input "quit") (println "Closing the game, see you next time.")
-                (and (or (= input "go") (= input :go)) (get-in state-weak [:data :adventurer :game-not-started])) (do (println "One day after work, you comeback to your home and is going to sleep. \nUnfortunatley, a horrible ancient evil is now looking for a human to be its new toy...\nRemember to use diary to change the settings before start!\n The default character is very weak!")
+                (and (or (= input "go") (= input :go)) (get-in state-weak [:data :adventurer :game-not-started])) (do (println "One day after work, you comeback to your home and is going to sleep. \nUnfortunatley, a horrible ancient evil is now looking for a human to be its new toy...\nRemember to use diary to change the settings before start!\n The default character is very weak! \nYou can enter 'operations' to check most of the operations you can use!")
                                                                                       (recur (assoc-in state-weak [:data :adventurer :game-not-started] false)))
                 :else (let [result (react state-weak (canonicalize input))]
                   (if (and (> (count result) 1) (= (result 1) :gameover)) (println "Thank you for playing this game and see you next time!")
@@ -749,7 +749,7 @@
              (let [input (read-line)]
               (cond
               (= input "quit") (println "Closing the game, see you next time.")
-              (and (or (= input "go") (= input :go)) (get-in state [:data :adventurer :game-not-started])) (do (println "One day after work, you comeback to your home and is going to sleep. \nUnfortunatley, a horrible ancient evil is now looking for a human to be its new toy...")
+              (and (or (= input "go") (= input :go)) (get-in state [:data :adventurer :game-not-started])) (do (println "One day after work, you comeback to your home and is going to sleep. \nUnfortunatley, a horrible ancient evil is now looking for a human to be its new toy...\nRemember to use diary to change the settings before start!\n The default character is very weak! \nYou can enter 'operations' to check most of the operations you can use!")
                                                                                       (recur (assoc-in state [:data :adventurer :game-not-started] false)))
               :else (let [result (react state (canonicalize input))]
 
